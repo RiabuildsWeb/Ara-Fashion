@@ -11,7 +11,7 @@ import About from './Pages/About'
 import Contact from './Pages/Contact' 
 import Buttons from './Components/Buttons'
 import Footer from './Components/Footer'
-import SearchBar from './Components/Searchbar'
+import SearchBar from './Components/SearchBar'
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
