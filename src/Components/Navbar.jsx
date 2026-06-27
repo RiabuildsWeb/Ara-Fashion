@@ -14,7 +14,7 @@ const Navbar = () => {
   const { setShowSearch, getCartCount } = useContext(AraContext);
 
   return (
-    <div className="w-full h-15 bg-white flex items-center justify-between px-4 shadow-md fixed top-0 left-0 z-50 py-4 font-medium">
+    <div className="w-full h-15 bg-transparent flex items-center justify-between px-4 shadow-md fixed top-0 left-0 z-50 py-4 font-medium">
    <Link to='/'><img src={assets.Aralogo} alt="ARA Logo" className="w-36 md:w-32" /></Link>
    <ul className="hidden sm:flex gap-5 text-sm text-gray-700 md:flex ">
    <NavLink to='/' className="hover:text-brown-900 transition-colors duration-300" >
