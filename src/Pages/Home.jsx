@@ -11,7 +11,7 @@ import Newsletter from '../Components/Newsletter'
 const Home = () => {
   return (
     <div>
-      <main className='pt-15 md:pt-15'> <Hero />
+      <main className='pt-15 md:pt-15 '> <Hero />
       <Buttons />
       <Hr />
       <OurCollection />

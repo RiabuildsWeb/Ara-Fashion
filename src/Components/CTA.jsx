@@ -1,32 +1,55 @@
 import React from "react";
 import { assets } from "../assets/Ara";
 
-
 const CTA = () => {
+  
+
   return (
-    <div>
-      <div className="relative h-screen  overflow-hidden max-w-7xl md:h-screen pt-8 rounded mx-auto px-6 ">
-        <img
-          src={assets.Ourstory}
-          alt=""
-          className="absolute inset-0 w-full lg:h-full object-cover object-top mt-13 sm:w-full sm:h-full rounded  "
-        />
-        <div className=" absolute  flex flex-col items-start md:px-18 text-white px-6  lg:px-20 md:pt-0 mt-20 ">
-          <h1 className=" text-3xl sm:text-3xl md:text-5xl lg:text-6xl  font-serif leading-tight ">
-            Ready to Create <br /> Something Timeless?
-          </h1>
-          <p className=" text-sm md:text-lg sm:text-base leading-relaxed max-w-[280px] sm:max-w-md  md:max-w-lg  mb-7">
-            Book a consultation with our Team of excellent <br />and let's bring your vision to
-            life.
-          </p>
-          <button
-            className=" border border-[#C8A97E] px-6 md:py-3  tracking-[0.2em] text-xs md:text-sm hover:bg-[#C8A97E] hover:text-black transition duration-300 cursor-pointer"
-          >
-            BOOK CONSULTATION
-          </button>
+    <section className="relative  lg:min-h-[105vh]  lg:h-screen overflow-hidden">
+
+      {/* Mobile Background */}
+      <img
+        src={assets.mobileourstory}
+        alt="ARA Consultation"
+        className="absolute inset-0 block md:hidden w-full h-full object-cover"
+      />
+
+      {/* Desktop Background */}
+      <img src={assets.Cta} alt="ARA Consultation" className="absolute inset-0 hidden md:block w-full h-full object-cover object-[82%_center]"/>
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/15"></div>
+
+      {/* Content */}
+      <div className="relative z-10 flex items-center min-h-[85vh] md:min-h-screen">
+
+        <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+
+          <div className="max-w-lg text-white">
+
+            <h1 className="font-serif text-[clamp(2.5rem,6vw,5rem)] leading-[0.92] mb-6">
+              Ready to Create?
+            </h1>
+
+            <p className="text-base md:text-lg leading-8 text-white/90">
+              Book a consultation with our team of professionals at ARA and
+              let's bring your vision to life.
+            </p>
+
+            <button
+              
+              className="mt-8 inline-flex items-center justify-center border border-[#C8A97E] px-8 py-3 text-xs sm:text-sm uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-[#C8A97E] hover:text-black"
+            >
+              Book Consultation
+            </button>
+
+          </div>
+
         </div>
+
       </div>
-    </div>
+
+    </section>
   );
 };
 

@@ -10,6 +10,8 @@ import Ara10 from './Ara10.png'
 import Ara11 from './Ara11.png'
 import Ara12 from './Ara12.png'
 import AboutHero from './AboutHero.png'
+import mobilehero from './Heromobile.png'
+import mobileourstory from './mobileourstory.png'
 import Contacthero from './Contacthero.png'
 import AraCouple from './AraCouple.png'
 import Herobanner from './Herobanner.png'
@@ -26,10 +28,7 @@ import menu_icon from './menu_icon.png'
 import staricon from './star_icon.png'
 import stardullicon from './star_dull_icon.png'
 import searchicon from './search_icon.png'
-import button1 from './button1.png'
-import button2 from './button2.png'
-import button3 from './button3.png'
-import button4 from './button4.png'
+
 
 
 
@@ -45,6 +44,8 @@ export const assets={
     Ara10,
     Ara11,
     Ara12,
+    mobilehero,
+    mobileourstory,
     AboutHero,
     Contacthero,
     AraCouple,   
@@ -59,35 +60,31 @@ export const assets={
     menu_icon,
     staricon,
     stardullicon,
-    searchicon,
-    button1,
-    button2,
-    button3,
-    button4
+    searchicon
 }
 
 export const buttons=[
     {
         id:1,
-        title:"Authentic African Craftmnship",
-        button:button1,
+        title:"Authentic",
+        subtitle:"African craftmanship"
     },
     
     {
        id:2,
-       title:"Premium Quality fabrics" ,
-       button:button2,
+       title:"Premium Quality",
+       subtitle:" fabrics",
     },
     {
         id:3,
-        title:"Timeless Designs Modern fit",
-        button:button3,
+        title:"Timeless Designs ",
+        subtitle:"Modern fit",
     },
 
     {
         id:4,
-        title:"Made for every moment",
-        button:button4  , 
+        title:"Made for every",
+        subtitle:"moment", 
     }
 ]
 

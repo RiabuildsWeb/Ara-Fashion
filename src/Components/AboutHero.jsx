@@ -1,47 +1,57 @@
 import React from 'react'
 import { assets } from '../assets/Ara'
- 
+
 
 const AboutHero = () => {
-  
-
   return (
-    <section className="relative min-h-[100svh] md:min-h-[140vh] w-full overflow-hidden ">
+    <section className="relative min-h-screen md:min-h-[150vh] overflow-hidden">
 
       {/* Background Image */}
       <img
         src={assets.AboutHero}
-        alt=""
-        className="absolute inset-0 w-full h-full object-[82%_center] md:object center object-cover"
+        alt="ARA About Hero"
+        className="absolute inset-0 w-full h-full object-cover object-[68%_center] md:object-center lg:object-top "
       />
-      <div className="absolute inset-0 bg-black/10" />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/25 to-black/10 md:from-black/20 md:via-transparent md:to-black/20" />
 
       {/* Content */}
-      <div className="relative z-10 flex  items-center h-[85svh] px-6 lg:px-10">
+      <div className="relative z-10 flex min-h-screen items-center">
 
-        <div className="max-w-xl w-full">
+        <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
 
-          <p className="md:text-2xl sm:text-xl mb-5">
-            About Ara
-          </p>
+          <div className="md:flex md:justify-start md:items-center md:gap-12 lg:gap-20">
 
-          <h1 className="text-[clamp(2.5rem,8vw,6rem)] font-serif leading-[0.95] mb-5 text-white">
-            Rooted  <br />in Culture
-          </h1>
+            <div className="max-w-xl text-white">
 
-          <p className="text-[clamp(1rem,2vw,1.4rem)] leading-[1.8] mb-8">
-            ARA is a contemporary African fashion brand that <br />
-             celebrates heritage, African craftmanship.
-            We create meaningful designs that honour our culture while<br />
-            embracing modern luxury.
-          </p>
-         
+              <p className="uppercase tracking-[0.3em] text-sm md:text-base mb-5 text-white/90">
+                About ARA
+              </p>
+
+              <h1 className="font-serif text-[clamp(3rem,7vw,6rem)] leading-[0.92] mb-6">
+                Rooted
+                <br />
+                in Culture
+              </h1>
+
+              <p className="text-base md:text-lg leading-8 text-white/90">
+                ARA is a contemporary African fashion brand celebrating
+                heritage, craftsmanship, and timeless design. Every piece is
+                thoughtfully created to honour our culture while embracing
+                modern luxury.
+              </p>
+
+            </div>
+
+          </div>
 
         </div>
 
       </div>
+
     </section>
   );
 };
 
-export default AboutHero  
+export default AboutHero;

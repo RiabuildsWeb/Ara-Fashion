@@ -9,3 +9,16 @@
 a.active hr{
  display: block;
   }
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

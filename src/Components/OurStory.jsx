@@ -1,54 +1,64 @@
-import React from 'react'
-import {assets} from '../assets/Ara'
-import { useNavigate } from 'react-router-dom'
+import React from "react";
+import { assets } from "../assets/Ara";
+import { useNavigate } from "react-router-dom";
 
 const OurStory = () => {
   const navigate = useNavigate();
-  return (
-    <div>
-       <div className="relative h-screen overflow-hidden w-full md:h-screen pt-8  " >
-               
-            <img src={assets.Ourstory} loading='lazy' alt="" className="absolute inset-0 w-full lg:h-full object-cover object-top mt-13 sm:w-full sm:h-full  "/>
-             <div className=" absolute  flex flex-col items-start justify-center md:px-18 text-white px-6  md:px-20 lg:px-20 pt-16 md:pt-0 lg:mt-15 "> 
-               <p className="
-                     text-sm
-                     font-bold
-                     md:text-base
-                     sm:text-base
-                     leading-relaxed
-                     max-w-[289px]
-                     sm:max-w-md
-                     md:max-w-lg
-                     mb-4
-                   ">
-                    OUR STORY
-               </p>
-               <h1 className=" text-3xl sm:text-3xl md:text-5xl lg:text-6xl  font-serif leading-tight ">
-                 Rooted in culture 
-               </h1>
-                   <p
-  className="
-    text-[clamp(1rem,2vw,1.4rem)]
-    leading-[1.8]
-    tracking-wide
-    max-w-[32rem]
-    mb-8
-    text-white
-  "
->
-  Ara is a celebration of African heritage and contemporary fashion creating timeeless pieces that speak identity,<br />
-  and confidence.
-</p>
-                 <button onClick={() => navigate('/about')} className=" border border-[#C8A97E] px-6 md:py-3  tracking-[0.2em] text-xs md:text-sm hover:bg-[#C8A97E] hover:text-black transition duration-300 cursor-pointer">
-                   Learn More
-                 </button>
-             </div>
-             <div>
-               
-             </div>
-            </div> 
-    </div>
-  )
-}
 
-export default OurStory
+  return (
+    <section className="relative  lg:min-h-[105vh]  lg:h-screen overflow-hidden">
+
+    {/* {Mobile Background } */}
+      <img
+        src={assets.mobileourstory}
+        alt="ARA Consultation"
+        className="absolute inset-0 block md:hidden w-full h-full object-cover"
+      />
+
+      {/* Desktop Background */}
+      <img src={assets.Cta} alt="ARA Consultation" className="absolute inset-0 hidden md:block w-full h-full object-cover object-[82%_center]"/>
+      
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/15"></div>
+
+      {/* Content */}
+      <div className="relative z-10 flex items-center min-h-[85vh] md:min-h-screen">
+
+        <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+
+          <div className="max-w-lg text-white">
+
+            <p className="uppercase tracking-[0.35em] text-xs text-[#C8A97E] mb-4">
+              OUR STORY
+            </p>
+
+            <h1 className="font-serif text-[clamp(2.5rem,6vw,5rem)] leading-[0.92] mb-6">
+              ROOTED IN CULTURE
+            </h1>
+
+            <p className="text-base md:text-lg leading-8 text-white/90">
+               ARA is a contemporary African fashion brand celebrating
+                heritage, craftsmanship, and timeless design. Every piece is
+                thoughtfully created to honour our culture while embracing
+                modern luxury
+            </p>
+
+            <button
+              onClick={() => navigate("/About")}
+              className="mt-8 inline-flex items-center justify-center border border-[#C8A97E] px-8 py-3 text-xs sm:text-sm uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-[#C8A97E] hover:text-black"
+            >
+            Learn More
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+};
+
+export default OurStory;
