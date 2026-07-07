@@ -9,12 +9,15 @@ const Hero = () => {
     <section className="relative min-h-[100svh] lg:min-h-screen  md:min-h-screen   lg:min-h-screen  xl:min-h-[135svh] overflow-hidden ">
       {/* Responsive Hero Image */}
       <picture className="absolute inset-0 object-[81%_center] ">
-        <source media="(min-width: 768px)" srcSet={assets.Herobanner} />
+        <source media="(min-width: 768px)" srcSet={assets.Herobanner}/>
 
         <img
           src={assets.mobilehero}
           alt="ARA Fashion Hero"
           className="h-full w-full object-cover object-top"
+          fetchPriority="high"
+          decoding="async"
+          
         />
       </picture>
 

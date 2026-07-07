@@ -26,6 +26,8 @@ const ContactHero = () => {
             src={assets.Contacthero}
             alt=""
             className="w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
 

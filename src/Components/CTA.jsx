@@ -12,6 +12,8 @@ const CTA = () => {
         src={assets.mobileourstory}
         alt="ARA Consultation"
         className="absolute inset-0 block md:hidden w-full h-full object-cover"
+        fetchPriority="lazy"
+        decoding="async"
       />
 
       {/* Desktop Background */}

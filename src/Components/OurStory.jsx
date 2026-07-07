@@ -13,10 +13,12 @@ const OurStory = () => {
         src={assets.mobileourstory}
         alt="ARA Consultation"
         className="absolute inset-0 block md:hidden w-full h-full object-cover"
+        loading="lazy"
+        decoding="async"
       />
 
       {/* Desktop Background */}
-      <img src={assets.Cta} alt="ARA Consultation" className="absolute inset-0 hidden md:block w-full h-full object-cover object-[82%_center]"/>
+      <img src={assets.Cta} alt="ARA Consultation" className="absolute inset-0 hidden md:block w-full h-full object-cover object-[82%_center]" loading="lazy" decoding="async"/>
       
 
       {/* Dark Overlay */}

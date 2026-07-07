@@ -11,6 +11,8 @@ const AboutHero = () => {
         src={assets.AboutHero}
         alt="ARA About Hero"
         className="absolute inset-0 w-full h-full object-cover object-[68%_center] md:object-center lg:object-top "
+        fetchPriority='high'
+        decoding='async'
       />
 
       {/* Overlay */}
