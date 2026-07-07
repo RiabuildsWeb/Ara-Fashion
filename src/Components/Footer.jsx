@@ -31,7 +31,7 @@ const Footer = () => {
             <div className='col-span-3'>
              <hr className="w-full border-[#4B3428] opacity-40" />
 
-        <p className='text-center text-sm text- white py-4'>© 2023 Ara. All rights reserved.</p>
+        <p className='text-center text-sm text- white py-4'>© 2026 Ara. All rights reserved.</p>
        </div>
          </div>
        
