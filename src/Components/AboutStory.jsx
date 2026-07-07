@@ -24,7 +24,7 @@ const AboutStory = () => {
         <div className="space-y-6 text-neutral-600 leading-8 text-lg">
           <p>
             Born from a deep love for African textiles and tradition,
-            ARA was founded by Orole Gloria in the year 2019 to bridge the gap between heritage and
+            ARA was founded by the founder in the year 2019 to bridge the gap between heritage and
             modern luxury.
           </p>
 
@@ -52,11 +52,11 @@ const AboutStory = () => {
       </div>
 
       {/* IMAGE */}
-      <div>
+      <div className="w-full overflow-hidden">
         <img
           src={assets.AraStory}
           alt=''
-          className="w-full h-[480px]  object-cover"
+          className="w-full h-[260px] sm:h-[320px] md:h-[400px] lg:h-[480px] object-cover"
         />
       </div>
 
