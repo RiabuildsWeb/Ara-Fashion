@@ -11,15 +11,17 @@ const AboutHero = () => {
           </div>
         </div>
 
-     <div className='flex flex-col text-sm text-gray-900  mx-4 my-4'>
-    <p className="text-base md:text-lg leading-8 ">
+     <div className='flex flex-col text-sm text-gray-900  mx-4 my-4 md:mx-20 md:my-10 gap-4'>
+      <div>
+        <p className="text-base md:text-lg leading-8 ">
                 ARA is a contemporary African fashion brand celebrating
                 heritage, craftsmanship, and timeless design. Every piece is
-                thoughtfully created to honour our culture while embracing
-                modern luxury.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni vel unde labore, consequatur eveniet ipsam quia cumque distinctio praesentium pariatur ipsum. Necessitatibus quaerat similique adipisci neque, dignissimos sed architecto deleniti.
+                thoughtfully created to honour our culture while embracing modern aesthetics. Our collections are a fusion of traditional African textiles and contemporary silhouettes, reflecting the rich diversity of our continent. We believe in sustainable fashion, ensuring that each garment is ethically produced with respect for both people and the planet.
           </p>
-          <p className='text-base md:text-lg leading-8'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni vel unde labore, consequatur eveniet ipsam quia cumque distinctio praesentium pariatur ipsum. Necessitatibus quaerat similique adipisci neque, dignissimos sed architecto deleniti.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni vel unde labore, consequatur eveniet ipsam quia cumque distinctio praesentium pariatur ipsum. Necessitatibus quaerat similique adipisci neque, dignissimos sed architecto deleniti.</p>
-          <p className='text-base md:text-lg leading-8'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni vel unde labore, consequatur eveniet ipsam quia cumque distinctio praesentium pariatur ipsum. Necessitatibus quaerat similique adipisci neque, dignissimos sed architecto deleniti.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni vel unde labore, consequatur eveniet ipsam quia cumque distinctio praesentium pariatur ipsum. Necessitatibus quaerat similique adipisci neque, dignissimos sed architecto deleniti.</p>
+      </div>
+       <div><p className='text-base md:text-lg leading-8'> At ARA we believe in the power of fashion to tell stories and create connections. We are committed to showcasing the best of African design on the global stage, while staying true to our roots and values.</p></div>
+          
+         <div><p className='text-base md:text-lg leading-8'> Welcome to our World of African Fashion! </p></div>  
           
 </div>
 

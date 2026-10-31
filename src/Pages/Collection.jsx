@@ -70,7 +70,7 @@ useEffect(()=>{
       </div>
       {/* right side */}
       <div className=' flex-1 font-serif text-center '>
-      <div className=' text-base sm:text-2xl mb-4 mt-4 '>
+      <div className=' text-base sm:text-2xl mb-4 mt-8 '>
      <p>ALL COLLECTIONS</p>
      </div>
      {/* Map products */}
